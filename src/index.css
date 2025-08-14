@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+  }
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: auto;
+}
+
+::-webkit-scrollbar-track {
+  background: #a1a1a1; /* Light mode  */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #43A047; 
+  border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1f2937; /* Dark mode */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #CA8A04; 
+  border-color: #1f2937;
+}
+
