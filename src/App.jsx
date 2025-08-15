@@ -98,7 +98,7 @@ function App() {
 
       <main className="p-4 max-w-7xl mx-auto flex flex-col lg:flex-row gap-6">
         {/* Sidebar / Form */}
-        <div className="lg:w-1/3 w-full sticky top-24 z-10">
+        <div className="lg:w-1/3 w-full lg:sticky lg:top-24 z-10">
           <NoteForm
             saveNote={saveNote}
             editingNote={editingNote}
@@ -129,7 +129,7 @@ function App() {
         </div>
 
         {/* Notes Grid */}
-        <div className="lg:w-2/3 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-y-auto max-h-[75vh] p-2 bg-gray-100 dark:bg-gray-800 rounded-lg custom-scroll border border-gray-200 dark:border-yellow-400">
+        <div className="lg:w-2/3 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 overflow-y-auto lg:max-h-[75vh] p-2 bg-gray-100 dark:bg-gray-800 rounded-lg custom-scroll border border-gray-200 dark:border-gray-700">
           {filteredNotes.length === 0 ? (
             <div className="col-span-full flex flex-col items-center justify-center mt-16 text-center text-gray-500 dark:text-gray-400">
               {noResults ? (

@@ -109,8 +109,7 @@ function NoteCard({ note, updateNote, setEditingNote, view }) {
   return (
     <>
       <div
-        className="relative bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg p-3 flex flex-col justify-between shadow-sm hover:shadow-md transition cursor-pointer"
-        style={{ width: "260px", height: "160px" }}
+        className="relative bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg p-3 flex flex-col justify-between shadow-sm hover:shadow-md transition cursor-pointer w-full sm:w-64 h-40"
         onClick={() => setShowModal(true)}
       >
         {/* Title + Pin */}
@@ -165,7 +164,7 @@ function NoteCard({ note, updateNote, setEditingNote, view }) {
           onClick={() => setShowModal(false)}
         >
           <div
-            className="bg-white dark:bg-gray-900 rounded-2xl shadow-2xl w-full max-w-xl max-h-[90vh] overflow-hidden flex flex-col transform transition-transform duration-300 scale-95 hover:scale-100"
+            className="bg-white dark:bg-gray-900 rounded-lg shadow-2xl w-full max-w-xl max-h-[90vh] overflow-hidden flex flex-col transform transition-transform duration-300 scale-95 hover:scale-100"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}

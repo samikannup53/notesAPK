@@ -37,7 +37,7 @@ function Header({ dark, setDark, clearNotes, search, setSearch }) {
         </div>
 
         {/* Search */}
-        <div className="flex-1 md:flex-none w-full md:w-1/3">
+        <div className="flex-1 md:flex-none w-full sm:w-2/3 md:w-1/3">
           <input
             type="text"
             placeholder="Search notes..."
