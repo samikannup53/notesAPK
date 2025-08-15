@@ -1,4 +1,5 @@
-import { Trash2, Moon, Sun, Laptop, ChevronDown, Notebook } from "lucide-react";
+import { Trash2, Moon, Sun, Laptop, ChevronDown } from "lucide-react";
+import logo from "../assets/logo.png";
 import { useState, useEffect } from "react";
 
 function Header({ dark, setDark, clearNotes, search, setSearch }) {
@@ -29,7 +30,7 @@ function Header({ dark, setDark, clearNotes, search, setSearch }) {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between p-4 gap-4">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <Notebook className="text-yellow-500" size={28} />
+          <img src={logo} className="w-10 mt-2" alt="Logo" />
           <h1 className="text-2xl font-semibold text-gray-600 dark:text-white">
             notesAPK
           </h1>
