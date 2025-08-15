@@ -23,7 +23,7 @@ Create, edit, pin, archive, search, and tag notes for easy organization.
 ---
 ## 🚀 Live Demo
 
-Experience FlyTix in action:
+Experience notesAPK in action:
 
 - 🌐 **Frontend App** → [notesAPK](https://sami-notesapk.netlify.app/)
 
